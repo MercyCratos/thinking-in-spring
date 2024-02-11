@@ -12,6 +12,7 @@
     <modules>
         <module>ioc-container-overview</module>
         <module>spring-bean</module>
+        <module>dependency-lookup</module>
     </modules>
 
     <properties>
@@ -46,6 +47,15 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <!-- Spring 依赖 -->
+    <dependencies>
+        <!-- Spring IoC 核心依赖 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
 
